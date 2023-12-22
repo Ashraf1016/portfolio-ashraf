@@ -6,7 +6,7 @@ import {
   useGLTF,
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 export function Table({ scrollPosition }, props) {
   const headset = useGLTF("./models/headset.glb");
   const pliers = useGLTF("./models/pliers.glb");
