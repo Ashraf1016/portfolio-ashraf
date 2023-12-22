@@ -8,6 +8,7 @@ import { Table } from "./Table";
 gsap.registerPlugin(ScrollTrigger);
 export const New = () => {
   const scroll = useRef(0);
+  const [loading, setLoading] = useState(true);
   const [scrollPosition, setScrollPosition] = useState(0);
   const caption = useRef();
   const boxRefs = useRef([]);
@@ -42,6 +43,16 @@ export const New = () => {
 
   return (
     <>
+      {loading && (
+        <div className="parentloader">
+          <div className="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      )}
       <div id="webgi-canvas-container">
         <Canvas id="webgi-canvas">
           <ambientLight />
@@ -51,8 +62,8 @@ export const New = () => {
             scroll={scroll}
             caption={caption}
             scrollPosition={scrollPosition}
+            setLoading={setLoading}
           />
-
           <OrbitControls />
         </Canvas>
       </div>

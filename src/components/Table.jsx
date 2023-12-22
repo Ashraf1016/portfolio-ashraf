@@ -7,9 +7,9 @@ import {
 } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useEffect, useRef } from "react";
-export function Table({ scrollPosition }, props) {
-  const headset = useGLTF("./models/headset.glb");
-  const pliers = useGLTF("./models/pliers.glb");
+export function Table({ scrollPosition,setLoading }, props) {
+  let headset = null
+  headset = useGLTF("./models/headset.glb");
   const headsetRef = useRef();
   useEffect(() => {
     const rotationSpeed = 0.005; // Adjust the rotation speed as needed. Increase for faster rotation, decrease for slower rotation.
@@ -33,7 +33,11 @@ export function Table({ scrollPosition }, props) {
       newZoomLevel + 2
     );
   }, [scrollPosition]);
-
+  useEffect(()=>{
+    if(headset){
+      setLoading(false)
+    }
+  },[headset])
   useFrame(() => {
     headsetRef.current.rotation.y += 0.002;
   });
@@ -41,26 +45,6 @@ export function Table({ scrollPosition }, props) {
 
   return (
     <>
-      <group {...props} dispose={null}>
-        <mesh
-          geometry={pliers.nodes.clawL_lowPoly__0.geometry}
-          material={pliers.materials["Scene_-_Root"]}
-          position={[0, 76.168, -0.722]}
-          rotation={[0, 0, 0.175]}
-        />
-        <mesh
-          geometry={pliers.nodes.handle_lowPoly__0.geometry}
-          material={pliers.materials["Scene_-_Root"]}
-          position={[0, 76.168, -0.722]}
-          rotation={[0, 0, 0.175]}
-        />
-        <mesh
-          geometry={pliers.nodes.clawR_lowPoly__0.geometry}
-          material={pliers.materials["Scene_-_Root"]}
-          position={[0, 76.168, -0.722]}
-          rotation={[0, 0, 0.175]}
-        />
-      </group>
       <group {...props} dispose={null} ref={headsetRef} position={[0,0,0]}>
         <group rotation={[-Math.PI / 2, -0.23, 5]} scale={1}>
           <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
