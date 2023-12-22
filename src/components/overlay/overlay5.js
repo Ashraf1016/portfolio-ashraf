@@ -1,4 +1,3 @@
-import { useState } from "react"
 import arrow from '../../components/images/arrow-path.svg'
 import { Button } from "ui-waves"
 import connect from '../../components/images/connect.png'
@@ -9,8 +8,6 @@ const Overlay5 = () => {
         window.location.href = url; // Navigate to the specified URL
       };
     return (
-
-
          <div style={{ display: 'flex', justifyContent: 'center',alignItems:'center' }} >
             <div >
             <div>

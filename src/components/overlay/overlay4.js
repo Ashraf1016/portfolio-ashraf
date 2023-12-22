@@ -1,4 +1,3 @@
-import { useState } from "react"
 import arrow from '../../components/images/arrow-path.svg'
 
 const Overlay4 = () => {

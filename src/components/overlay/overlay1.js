@@ -1,6 +1,5 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
-import { Button } from 'ui-waves';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';

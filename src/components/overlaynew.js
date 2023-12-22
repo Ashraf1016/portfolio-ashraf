@@ -32,7 +32,7 @@ const Overlay = forwardRef(({ setScrollPosition, caption, scroll }, ref) => {
       }}
     >
       <section className="panel first">
-      <img src={profile}  className="proImg"/>
+      <img src={profile} alt='pro' className="proImg"/>
         <Overlay1 />
       </section>
 

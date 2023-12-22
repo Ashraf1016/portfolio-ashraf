@@ -1,9 +1,8 @@
 import { RGBELoader } from "three-stdlib";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { Canvas,useLoader } from "@react-three/fiber";
 import {
   Center,
   Text3D,
-  Instance,
   Instances,
   Environment,
   Lightformer,
@@ -13,14 +12,6 @@ import {
   MeshTransmissionMaterial,
   Stage,
 } from "@react-three/drei";
-import * as THREE from "three";
-
-import { useControls, button } from "leva";
-import {
-  EffectComposer,
-  HueSaturation,
-  BrightnessContrast,
-} from "@react-three/postprocessing";
 import { TextureLoader } from "three";
 import { useEffect, useRef, useState } from "react";
 

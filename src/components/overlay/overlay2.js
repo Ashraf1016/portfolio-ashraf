@@ -1,4 +1,3 @@
-import pro from "../../components/images/pro.png";
 import vue from "../../components/images/vue.png";
 import angular from "../../components/images/angular.jpg";
 import react from "../../components/images/react.png";
@@ -13,7 +12,6 @@ import js from "../../components/images/js.png";
 import sass from "../../components/images/sass.png";
 import jquery from "../../components/images/jquery.png";
 import arrow from "../../components/images/arrow-path.svg"
-
 
 export default function Overlay2() {
   return (
