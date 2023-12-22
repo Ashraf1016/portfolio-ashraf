@@ -1,27 +1,20 @@
-import React, { useRef, useState, useEffect, Fragment } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import React, { useRef, useState, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { OrbitControls } from "@react-three/drei";
 import Overlay from "./overlaynew";
 import { Table } from "./Table";
-
 gsap.registerPlugin(ScrollTrigger);
-
 export const New = () => {
-  // ... (your Box component code)
   const scroll = useRef(0);
   const [scrollPosition, setScrollPosition] = useState(0);
-
-  // Store references to the boxes
   const caption = useRef();
   const boxRefs = useRef([]);
-  const meshRef = useRef();
   const overlay = useRef();
 
   // Set up state for the hovered and active state
-  const [hovered, setHover] = useState(false);
-  const [active, setActive] = useState(false);
+
   useEffect(() => {
     // Define the animation for the camera angle update
     const updateCameraAngle = (index) => {

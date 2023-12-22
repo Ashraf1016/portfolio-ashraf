@@ -10,7 +10,6 @@ import {
   RandomizedLight,
   AccumulativeShadows,
   MeshTransmissionMaterial,
-  Stage,
 } from "@react-three/drei";
 import { TextureLoader } from "three";
 import { useEffect, useRef, useState } from "react";

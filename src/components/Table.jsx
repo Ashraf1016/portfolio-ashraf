@@ -11,14 +11,12 @@ export function Table({ scrollPosition }, props) {
   const headset = useGLTF("./models/headset.glb");
   const pliers = useGLTF("./models/pliers.glb");
   const headsetRef = useRef();
-  const [zoomLevel, setZoomLevel] = useState(1);
   useEffect(() => {
     const rotationSpeed = 0.005; // Adjust the rotation speed as needed. Increase for faster rotation, decrease for slower rotation.
     const rotationValue = scrollPosition * rotationSpeed;
     headsetRef.current.rotation.x = rotationValue * 0.04;
     const zoomSpeed = 0.001; // Adjust the zoom speed as needed.
     const newZoomLevel = 1 + (scrollPosition / 2) * zoomSpeed;
-    setZoomLevel(newZoomLevel);
     headsetRef.current.scale.set(
       newZoomLevel * 0.5,
       newZoomLevel * 0.5,

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import illu from "../images/illustrate1.png";
-import pro from "../images/pro.png";
 
 const Overlay3 = ({ scroll }) => {
   const [left, setLeft] = useState(-50);
