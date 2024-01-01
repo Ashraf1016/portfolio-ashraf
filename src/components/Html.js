@@ -50,86 +50,21 @@ function Html() {
           color: "#f4b677",
         }}
       >
-        <div className="img-pros">
-          <img
-            className="avatar"
-            style={{ top: "-300px", left: "-200px" }}
-            src={react}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "-220px", left: "450px" }}
-            src={vue}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "10px", left: "-300px" }}
-            src={angular}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "-270px", left: "-850px" }}
-            src={html}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "200px", left: "-600px" }}
-            src={git}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "140px", left: "-900px" }}
-            src={css}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "-100px", left: "-750px" }}
-            src={tailwind}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "100px", left: "450px" }}
-            src={ts}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "-300px", left: "-550px" }}
-            src={js}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "-400px", left: "50px" }}
-            src={bootstrap}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "-400px", left: "450px" }}
-            src={node}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "160px", left: "150px" }}
-            src={sass}
-            alt="img"
-          />
-          <img
-            className="avatar"
-            style={{ top: "220px", left: "-50px" }}
-            src={jquery}
-            alt="img"
-          />
-        </div>
+       <div className="img-pros">
+      <img className="avatar react" src={react} alt="React" />
+      <img className="avatar vue" src={vue} alt="Vue" />
+      <img className="avatar angular" src={angular} alt="Angular" />
+      <img className="avatar html" src={html} alt="HTML" />
+      <img className="avatar git" src={git} alt="Git" />
+      <img className="avatar css" src={css} alt="CSS" />
+      <img className="avatar tailwind" src={tailwind} alt="Tailwind CSS" />
+      <img className="avatar ts" src={ts} alt="TypeScript" />
+      <img className="avatar js" src={js} alt="JavaScript" />
+      <img className="avatar bootstrap" src={bootstrap} alt="Bootstrap" />
+      <img className="avatar node" src={node} alt="Node.js" />
+      <img className="avatar sass" src={sass} alt="Sass" />
+      <img className="avatar jquery" src={jquery} alt="jQuery" />
+    </div>
       </div>
 
       <div
