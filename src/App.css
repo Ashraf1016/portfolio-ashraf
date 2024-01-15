@@ -132,10 +132,12 @@ body {
   max-height: 100vh;
   overflow-y: scroll;
   position: absolute;
+  width: 100vw !important;
   scroll-snap-type: y mandatory;
 }
 
 .panel {
+
   scroll-snap-align: start;
   height: 100vh;
 
