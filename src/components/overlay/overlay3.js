@@ -58,7 +58,9 @@ const Overlay3 = ({ scroll }) => {
           <div className="shadow">E</div>
         </div>
       </div>
-    <div style={{display:'flex',justifyContent:'space-evenly'}}>
+    <div style={{display:'flex',justifyContent:'space-evenly'}} 
+        className="cstm-timeline"
+        >
     <div
         id="animationContainer"
         style={{ left: `${left}px`, top: `${left}px` }}
