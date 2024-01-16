@@ -727,7 +727,6 @@ ul li .descr::before {
 .proImg {
   position: absolute;
   bottom: -50px;
-  width: 400px;
   opacity: 0.1;
 }
 .text {
@@ -737,7 +736,7 @@ ul li .descr::before {
   position: absolute;
   -webkit-user-select: none;
   user-select: none;
-  left: 28px;
+  left: -11px;
   top: -12px;
 }
 .overlay3 {
@@ -782,7 +781,7 @@ ul li .title {
 }
 .html {
   top: 570px;
-  left: 290px;
+  left: 150px;
 }
 .ts {
   top: 0;
@@ -801,8 +800,8 @@ ul li .title {
   left: 200px;
 }
 .vue {
-  top: 517px;
-  left: 30px;
+  top: 504px;
+  left: 10px;
 }
 .js {
   top: 100px;
@@ -819,17 +818,19 @@ ul li .title {
 }
 
 .git {
-  top: 602px;
-  left: 143px;
-  width: 88px;
+    top: 630px;
+    left: 20px;
+  width: 52px;
+
 }
 .jquery {
-  top: 220px;
-    left: 309px;
-    width: 73px;
+  top: 223px;
+  left: 300px;
+  width: 52px;
+
 }
 .parent {
-  margin-right: 0px !important;
+  margin-right: 0px;
   height: 200px;
   perspective: 1000px;
   display: flex;
@@ -838,14 +839,14 @@ ul li .title {
 }
 .parent2 {
   height: 200px;
-  margin-right: 0px !important;
+  margin-right: 0px;
   perspective: 1000px;
   display: flex;
   width: 100vw;
   justify-content: center;
 }
 .parent3 {
-  margin-right: 0px !important;
+  margin-right: 0px;
   height: 200px;
   perspective: 1000px;
   display: flex;
@@ -880,7 +881,7 @@ ul li .title {
   border: 1px solid rgba(255, 255, 255, 0.28);
   min-height: 600px;
   min-width: 350px;
-  margin: 75px 20px;
+  margin: 60px 38px 28px 15px;
   max-width: 500px;
   transition: transform 0.3s ease;
 }
@@ -892,8 +893,5 @@ ul li .title {
     transform: rotate(0deg);
     position: absolute;
     margin-top: -78px;
-}
-.cstm-timeline{
-  width: 434px;
 }
 }
